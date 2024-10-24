@@ -1,0 +1,450 @@
+* {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+    padding: 0% 100px;
+    /* background-color:blue */
+  }
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  .lists{
+    display: none;
+  }
+   .headerIcons{
+    display: flex;
+    /* flex-direction: row; */
+    gap: 50px; 
+    font-size: 1.5em;
+  }
+  
+  /*                                    hero section */
+  main {
+    display: flex;
+    background-color: whitesmoke;
+    height: 85vh;
+  }
+  
+  .heroBg {
+    /* background-image: url("./images/landing.png");
+    background-size: cover;
+    background-position: center; */
+    width: 50%;
+  }
+  
+  .heroBg img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .heroText {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .heroText h1 {
+    font-size: 60px;
+    font-weight: 900;
+  }
+  
+  .heroText span {
+    font-size: 20px;
+  }
+  
+  .heroText button {
+    background-color: rgb(20, 19, 19);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+  }
+  /*                            discover section */
+  .container{
+    padding: 0% 5%;
+    margin: auto;
+    background-color: white;
+  }
+  .discover{
+    display: flex;
+    padding: 7em 12em;
+    gap: 2em;
+  }
+  .line{
+    height: 10vh;
+    width: 0.3vw;
+    background-color: red;
+  }
+  .collection h1{
+    color: rgb(24, 23, 23);
+    font-weight: 900;
+    font-size: 1.8vw;
+  }
+  
+  /*                 items section */
+  .items{
+    display: grid;
+    grid-template-areas:  "side side head head"
+                          "side side head head"
+                          "side side foot foot"
+                          "side side foot foot";
+  height: 100vh;
+  gap: 1.5%;
+  }
+  .woman{
+    height: 95vh;
+    width: auto;
+    background-color: whitesmoke;
+    align-items: center;
+    align-content: center;
+    grid-area: side;
+    position: relative;
+  }
+  .contend{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card{
+    padding: 30px;
+    background-color: whitesmoke;
+    color: gray;
+    margin-left: 80px;
+  }
+  .card:hover,.card strong:hover{
+    background-color: black;
+    color: white;
+  }
+  .card strong{
+    color: rgb(68, 65, 65);
+  }
+  
+  .woman img{
+    height: 100%;
+    /* width: 50%; */
+    justify-content: center;
+    position: static;
+    padding-left: 20em;
+  }
+  .man{
+    height: 50vh;
+    /* width: 100%; */
+    background: whitesmoke;
+    grid-area: head;
+    position: relative;
+  }
+  .man img{
+   height: 100%;
+   padding-left:13em;
+  }
+  .girl{
+    height: 45vh;
+    grid-area: foot;
+    background-color: whitesmoke;
+    position: relative;
+  }
+  
+  .girl img{ 
+    height: 100%;
+    padding-left: 10em;
+    /* width: 100%; */
+ }
+ 
+ /*                    Product section */
+ 
+ .disco{
+  display: flex;
+  padding: 3em 12em;
+  gap: 2em;
+}
+.disco .line{
+  height: 5vh;
+}
+ .popular{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 2%;
+  /* height: 10vh; */
+ } 
+ .popular div{
+  background-color: whitesmoke;
+ }
+ .BrownShoe img{
+  height: 60%;
+  width: 100%;
+  padding-top: 10em;
+
+ }
+ .BlueShoe img{
+  height: 60%;
+  width: 100%;
+  padding-top: 5em;
+
+ }
+ .BrownJacket img{
+  /* height: 80%; */
+  /* width: 100%; */
+  padding: 0em 7em;
+
+ }
+ .ProText{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: 2em;
+ 
+  /* background-color: rgb(224, 163, 48); */
+  color: black;
+ }
+
+ /* .ProText div{
+  background-color: aquamarine;
+   padding: 2em 0em;
+
+ 
+ } */
+ .shoess{
+  padding-left:  31em; 
+  /* color: blue; */
+
+ }
+ .denimJack{
+   padding-left: 29em; 
+ }
+ h6{
+  color: gray;
+  font-size: 1.5em;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: light;
+  padding: 0.6em 0em;
+ }
+ strong{
+  font-size:1.8em ;
+  font-weight: bolder;
+ }
+ strike{
+  color: rgb(167, 164, 164);
+  font-size: 1.8em;
+ }
+ .popularImg{
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 2%;
+ }
+ .popularImg div{
+  background-color: whitesmoke;
+ }
+ .ProTextTwo{
+  display: flex;
+ }
+ .SmoothCloth{
+  padding-left:  26em; 
+  /* color: blue; */
+
+ }
+ .Yellow{
+   padding-left: 29em; 
+ }
+ .YellowImg img{
+  padding: 0em 7em;
+ }
+ .SmoothClothImg img{
+  height: 100%;
+  /* padding-right: 15em; */
+ }
+ .BrownBagImg img{
+  height: 80%;
+  padding-right: 2em;
+  margin-right: 2em;
+ }
+ .BagIcons{
+  color: rgb(245, 245, 57);
+  font-size: 1.8em;
+  font-weight: bolder;
+  padding-top: 0.4em;
+ }
+ /* MOST RATED */
+ h2{
+  padding-bottom: 0.3em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.5em;
+ }
+ .ratedline{
+  background-color: rgb(236, 34, 34);
+  width: 5vw;
+  height: 0.8vh;
+ }
+ .MostRatedDiv{
+  display: flex;
+  flex-direction: column;
+  padding: 8em 0em 4em 0em;
+  /* background-color: blue; */
+  justify-content: space-between;
+  align-items: center;
+
+ }
+
+ /*               FOOTER */
+
+ .summer{
+  width: 50%;
+  /* background-color: red; */
+ }
+ .summer img{
+  height: 100%;
+  padding-left: 10em;
+  /* width: 100%; */
+ }
+ .SummerArrival{
+    display: flex;
+    background-color: whitesmoke;
+    height: 65vh;
+    margin: 10em 0em;
+ }
+ .promo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    /* background-color: whitesmoke; */
+    height: 65vh;
+    width: 100%;
+    /* justify-content: space-between; */
+    gap: 5%;
+ }
+ .links{
+  display: flex;
+  justify-content: space-between;
+ }
+ /* .promoDiv{
+  background: blue;
+ } */
+ .promoImg img{
+  width: 90%;
+ }
+ .promoDiv h2{
+  color: rgb(209, 10, 10);
+  font-size: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0.4em 0em;
+  font-weight: lighter;
+ }
+ .promoDiv p{
+  font-size: 1.5em;
+  color: gray;
+ }
+ h3{
+  font-size: 1.7em;
+  padding-bottom: 1em;
+ }
+ .btn{
+  border: 1px solid rgb(201, 195, 195);
+  height: 10%;
+  width: 100%;
+  border-radius: 0.5em;
+  padding:0.5em 0.5em;
+ }
+ li{
+  color: gray;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom:  1.5em;
+  text-decoration: none;
+  list-style: none;
+  
+ }
+ 
+ a{
+  text-decoration: none;
+  /* color: gray; */
+ }
+ .contactLink i{
+  color: red;
+  /* background-color: red; */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  padding-right: 0.5em;
+ }
+ .contactLink{
+  padding-bottom: 3em;
+  /* background-color: blue; */
+ }
+ .contactLink a{
+  font-size: 1.5em;
+  color: rgb(87, 87, 87);
+  font-weight: bold;
+ }
+ .btn input{
+  width: 75%;
+  padding: 1.4em 0.3em;
+  border: none;
+ }
+ .btn button{
+  padding: 0.5em 0.5em;
+  width: 20%;
+  background: rgb(247, 12, 12);
+  color: white;
+  font-size: 1.5em;
+  /* border-radius: 0.5em; */
+  color: white;
+  border: none;
+  cursor: pointer;
+ }
+::placeholder{
+  font-size: 1.5em;
+ }
+ h5{
+  font-size: 1.5em;padding-bottom: 1em;
+  color: rgb(65, 63, 63);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+ }
+ .btn:hover{
+  border:1px solid red;
+  /* background: blue; */
+  
+ }
+ .btn button:hover{
+  background: rgb(145, 4, 4);
+ }
+ h4{
+  text-align: center;
+  font-size: 1.5em;
+  color: gray;
+  padding-bottom: 1.5em;
+  font-weight: lighter;
+ }
+
+ @media only screen and (max-width: 900px){
+  nav{
+    display: none;
+  }
+  .lists i{
+    display: block;
+  }
+ }
+
+  
+  
